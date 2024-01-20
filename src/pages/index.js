@@ -1,43 +1,39 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Layout from '@theme/Layout'
 
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
+import styles from './index.module.css'
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+import HeroImg from '../../static/img/Hero.jpg'
+
+function MyHero() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+    <div className={styles.myHeroContainer}>
+      <div className={styles.leftContainer}>
+        <h1 className={styles.leftContainer_h1}>
+          Always <br /> Ready to Code.
+        </h1>
+        <p className={styles.leftContainer_p}>
+          破解未知，探索无限
+          <br />
+          我在这里记录知识，希望同样能够帮助到你。
+        </p>
       </div>
-    </header>
-  );
+      <div className={styles.rightContainer}>
+        <img src={HeroImg} alt="HeroImg" />
+      </div>
+    </div>
+  )
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      // title={`${siteConfig.title}`}
+      title="Home"
+      description="Wiki知识库/vscode/javascript/软件/工具"
+    >
       <main>
-        <HomepageFeatures />
+        <MyHero />
       </main>
     </Layout>
-  );
+  )
 }

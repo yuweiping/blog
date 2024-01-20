@@ -64,12 +64,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // image: 'img/docusaurus-social-card.jpg',
+      announcementBar: {
+        id: 'support_us',
+        content:
+          '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuweiping/blog">GitHub</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       navbar: {
-        title: 'Auto100',
         logo: {
           alt: 'Auto100 Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
@@ -79,6 +86,10 @@ const config = {
             label: '笔记',
           },
           { to: '/blog', label: '博客', position: 'left' },
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             href: 'https://github.com/yuweiping',
             label: 'GitHub',
