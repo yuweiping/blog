@@ -9,7 +9,7 @@ function MyHero() {
     <div className={styles.myHeroContainer}>
       <div className={styles.leftContainer}>
         <h1 className={styles.leftContainer_h1}>
-          Always <br /> Ready to Code.
+          From Zero to Hero, <br /> with Code in between.
         </h1>
         <p className={styles.leftContainer_p}>
           破解未知，探索无限

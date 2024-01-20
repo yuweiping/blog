@@ -35,7 +35,7 @@
   padding: 2.5rem 6rem;
 }
 .leftContainer {
-  padding: 3rem 0 0 1rem;
+  padding: 6rem 0 0 1rem;
   font-size: 40px;
   flex: 2;
 }
@@ -52,7 +52,8 @@
 
 .leftContainer_h1 {
   color: rgb(58, 58, 58);
-  font-size: 4rem;
+  padding: 3rem 0;
+  font-size: 3rem;
 }
 .leftContainer_p {
   color: #565451;

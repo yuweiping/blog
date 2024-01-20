@@ -8,8 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Auto100',
-  tagline: 'Dinosaurs are cool',
+  title: '爆破爱好者',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -73,9 +72,22 @@ const config = {
         textColor: '#091E42',
         isCloseable: false,
       },
+      metadata: [
+        {
+          name: '这是一个共享的知识库(Wiki Database)，内容涉及软件分享，学习笔记(JavaScript,Vue,Python)等内容',
+          content:
+            'Wiki Database,JavaScript,Vue,Python,React,破解,技巧,知识库,Github,黑客',
+        },
+      ],
+      algolia: {
+        apiKey: '904f5cdb4da4d6cc721cd684dea2dfbb',
+        appId: 'OKB0VS6BYS',
+        indexName: 'auto100',
+      },
       navbar: {
         logo: {
-          alt: 'Auto100 Logo',
+          width: 150,
+          // height: 100,
           src: 'img/logo.png',
         },
         items: [
