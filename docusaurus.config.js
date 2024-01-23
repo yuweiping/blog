@@ -58,20 +58,22 @@ const config = {
       }),
     ],
   ],
-
+  markdown: {
+    format: 'detect',
+  },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
-      announcementBar: {
-        id: 'support_us',
-        content:
-          '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuweiping/blog">GitHub</a>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuweiping/blog">GitHub</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
       metadata: [
         {
           name: '这是一个共享的知识库(Wiki Database)，内容涉及软件分享，学习笔记(JavaScript,Vue,Python)等内容',
@@ -94,10 +96,10 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
+            position: 'right',
             label: '笔记',
           },
-          { to: '/blog', label: '博客', position: 'left' },
+          // { to: '/blog', label: '博客', position: 'left' },
           {
             type: 'search',
             position: 'right',
