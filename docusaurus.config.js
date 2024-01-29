@@ -101,6 +101,16 @@ const config = {
             position: 'right',
           },
           {
+            href: 'https://gemini.auto100.org/',
+            label: 'Gemini',
+            position: 'right',
+          },
+          {
+            href: 'https://jetbra.auto100.org/',
+            label: 'Jetbra',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/yuweiping',
             label: 'GitHub',
             position: 'right',
